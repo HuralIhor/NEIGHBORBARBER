@@ -3,7 +3,6 @@
     background: url('../img/main_bg.jpg') no-repeat 50%/cover;
     padding-top: 205px;
     
-    // .promo__link
     &__link {
         background-color: $main-color;
         color: #f9f8f5;
@@ -15,6 +14,7 @@
         margin-top: 30px;
         font-size: 14px;
         line-height: 21px;
+        text-decoration: none;
         &:hover {
             text-decoration: none;
             font-size: 18px;
@@ -22,4 +22,42 @@
         }
     }
     
+}
+
+
+@media (max-width: 1200px) {
+    .promo {
+        background: url('../img/main_bg.jpg') no-repeat 57%/cover;
+       
+    }
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+    
+    .promo {
+        background: url('../img/main_bg.jpg') no-repeat 50%/cover;
+        .title {
+            &_fz48 {
+            font-size: 40px;
+        }
+    }
+    }
+   
+
+}
+
+
+@media (max-width: 576px) {
+    .promo {
+        background: url('../img/main_bg.jpg') no-repeat 63%/cover;
+        .title {
+            &_fz48 {
+            font-size: 25px;
+        }
+    }
+}
 }

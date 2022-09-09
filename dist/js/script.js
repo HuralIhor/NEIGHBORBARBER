@@ -1,12 +1,9 @@
 
 const hamburger = document.querySelector('.hamburger'),
-    menu = document.querySelector('.menu'),
-    closeElem = document.querySelector('.menu__close');
+    menu = document.querySelector('.header__list');
 
 hamburger.addEventListener('click', () => {
-menu.classList.add('active');
+menu.classList.toggle('active');
+hamburger.classList.toggle('active');
 });
 
-closeElem.addEventListener('click', () => {
-menu.classList.remove('active');
-});
