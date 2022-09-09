@@ -23,6 +23,9 @@
        }
 
        &__link {
+        &:last-child {
+            display: none;
+        }
            a {
                color: white;
                margin: 5px 20px;
@@ -128,6 +131,11 @@
         font-size: 45px;
         line-height: 25px;
         font-weight: bold;
+        &:last-child {
+            display: block;
+            margin-top: auto;
+            margin-bottom: 50px;
+        }
        }
        .hamburger {
         display: flex;
