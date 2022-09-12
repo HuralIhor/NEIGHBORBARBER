@@ -1,7 +1,7 @@
    .header-wrapper {
         position: fixed;
         width: 100%;
-        background-color: rgba(135, 132, 132, 0.183);
+        background-color: rgba(5, 5, 5, 0.838);
         z-index: 10;
    }
    
@@ -107,6 +107,9 @@
    }
 
    @media (max-width: 768px) {
+    body.lock {
+        overflow: hidden;
+    }
       .header {
        &__list {
         display: flex;

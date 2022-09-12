@@ -1,0 +1,65 @@
+.about {
+
+    // .about__wrapper
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        padding-top: 120px;
+    }
+
+    // .about__photo
+
+    &__photo {
+        min-width: 400px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    // .about__description
+
+    &__description {
+        padding: 30px 40px;
+
+    }
+
+    &__text {
+        font-size: 20px;
+        color: #ffffffc2;
+    }
+}
+
+@media (max-width: 992px) {
+    .about__wrapper {
+        padding-top: 60px;
+    }
+    .about__photo {
+        padding: 10px;
+        min-width: 300px;
+    }
+
+    .about__description {
+        .title_fz36 {
+            font-size: 30px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about__wrapper {
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .about__text {
+        font-size: 16px;
+    }
+}
