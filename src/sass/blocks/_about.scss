@@ -1,13 +1,27 @@
 .about {
-
     // .about__wrapper
 
     &__wrapper {
         display: flex;
         flex-direction: row;
-        padding-top: 120px;
+        padding-top: 125px;
+        margin-bottom: 50px;
+        position: relative;
+
     }
 
+    // about__title
+
+    &__title {
+        position: absolute;
+        top: 55px;
+        left: -45px;
+        color: $main-color;
+        font-size: 100px;
+        line-height: 100px;
+        opacity: .5;
+        text-shadow: 3px 6px black;
+    }
     // .about__photo
 
     &__photo {
@@ -16,7 +30,8 @@
         img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            box-shadow: 2px 2px 25px black;
+            filter: grayscale(2);
         }
     }
 
@@ -24,27 +39,40 @@
 
     &__description {
         padding: 30px 40px;
-
     }
+
+    // .title {
+    //    color: #a49a9ac2;
+    // }
 
     &__text {
         font-size: 20px;
-        color: #ffffffc2;
+        color: #e8e1e1c2;
     }
 }
-
+@media (max-width: 1200px) {
+.about__title {
+        left: -25px;
+    }
+}
 @media (max-width: 992px) {
     .about__wrapper {
-        padding-top: 60px;
+        padding-top: 80px;
+    }
+    .about__title {
+        left: -25px;
+        top: 20px;
+        font-size: 70px;
+        line-height: 70px;
     }
     .about__photo {
         padding: 10px;
-        min-width: 300px;
+        min-width: 400px;
     }
 
     .about__description {
         .title_fz36 {
-            font-size: 30px;
+            font-size: 25px;
         }
     }
 }
@@ -53,13 +81,44 @@
     .about__wrapper {
         display: flex;
         flex-direction: column;
-        padding-top: 40px;
+        margin-bottom: 0;
+    }
+    .about__title {
+        left: -25px;
+        top: 27px;
+        font-size: 70px;
+        line-height: 70px;
+    }
+    .about__photo {
+        min-width: 370px;
+    }
+    .about__description {
+        padding: 10px 15px;
+        .title_fz36 {
+            font-size: 35px;
+            line-height: 40px;
+        }
     }
 }
 
 
 @media (max-width: 576px) {
     .about__text {
-        font-size: 16px;
+        font-size: 15px;
+    }
+    .about__title {
+        font-size: 50px;
+        line-height: 50px;
+        left: -5px;
+        top: 40px;
+    }
+    .about__photo {
+        min-width: 300px;
+    }
+    .about__description {
+        .title_fz36 {
+            font-size: 25px;
+            line-height: 40px;
+        }
     }
 }

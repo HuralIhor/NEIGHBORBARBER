@@ -22,7 +22,11 @@ if (navLinks.length > 0) {
             const gotoBlock = document.querySelector(menuLink.dataset.goto);
             let rect = gotoBlock.getBoundingClientRect();
             const gotoBlockValue = rect.top + scrollY - document.querySelector('header').offsetHeight;
-            console.log(gotoBlockValue);
+            if(hamburger.classList.contains('active')){
+                menu.classList.remove('active');
+                body.classList.remove('lock');
+                hamburger.classList.remove('active');
+            }
             window.scrollTo({
                 top: gotoBlockValue,
                 behavior: "smooth"

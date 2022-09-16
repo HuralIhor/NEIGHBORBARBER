@@ -1,0 +1,162 @@
+.service {
+
+    // .service__wrapper
+
+    &__wrapper {
+        padding-top: 135px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    // .service__item
+    &__title {
+        position: absolute;
+        top: 60px;
+        left: -45px;
+        color: $main-color;
+        font-size: 100px;
+        line-height: 100px;
+        opacity: .5;
+        text-shadow: 3px 6px black;
+    }
+    &__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 155px;
+    }
+
+    // .service__photo
+
+    &__photo {
+        min-height: 400px;
+        min-width: 470px;
+        z-index: 1;
+        overflow: hidden;
+        img{
+            width: 100%;
+            box-shadow: 2px 2px 25px black;
+        }
+    }
+
+    // .service__list
+
+    &__list {
+        color: rgb(254, 254, 254);
+        padding: 50px;
+        max-width: 45%;
+    }
+
+    // .service__list-item
+
+    &__list-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.provide {
+    color: rgb(192, 185, 185);
+    font-size: 20px;
+}
+
+.price {
+    color: rgb(192, 185, 185);
+    font-size: 20px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1200px) {
+    .service__title {
+        left: -25px;
+    }
+    .service__item {
+        margin-bottom: 120px;
+    }
+}
+
+@media  (max-width: 992px) {
+    .service__wrapper {
+        padding-top: 80px;
+    }
+    .service__title {
+        left: -25px;
+        top: 18px;
+        font-size: 70px;
+        line-height: 70px;
+    }
+    .service__item {
+        flex-direction: column;
+        margin-bottom: 100px;
+        
+    }
+    .service__item:nth-child(3){
+        flex-direction: column-reverse;
+    }
+    .service__list {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .service__list {
+        max-width: 100%;
+        padding: 15px;
+
+    }
+    .service__wrapper {
+        padding-top: 60px;
+    }
+    .service__title {
+        left: -25px;
+        top: 7px;
+        font-size: 70px;
+        line-height: 70px;
+    }
+    
+}
+
+
+@media (max-width: 576px) {
+    .service__photo {
+        min-width: 300px;
+        min-height: 200px;
+    }
+    .service__item {
+        margin-bottom: 70px;
+    }
+    .service__title {
+        font-size: 50px;
+        line-height: 50px;
+        left: -5px;
+        top: 10px;
+    }
+    .service__list {
+        padding: 10px;
+        .title_fz36 {
+            font-size: 25px;
+            line-height: 25px;
+        }
+    }
+    .provide {
+        color: rgb(192, 185, 185);
+        font-size: 20px;
+        line-height: 25px;
+    }
+    
+    .price {
+        color: rgb(192, 185, 185);
+        font-size: 20px;
+        line-height: 25px;
+        margin-left: 5px;
+        display: flex;
+        align-items: center;
+    }
+}
