@@ -14,7 +14,7 @@
 
     &__title {
         position: absolute;
-        top: 55px;
+        top: 35px;
         left: -45px;
         color: $main-color;
         font-size: 100px;
@@ -39,14 +39,17 @@
 
     &__description {
         padding: 30px 40px;
+        text-align: justify;
+
+        &-title {
+            margin-bottom: 40px;
+        }
     }
 
-    // .title {
-    //    color: #a49a9ac2;
-    // }
+   
 
     &__text {
-        font-size: 20px;
+        font-size: 27px;
         color: #e8e1e1c2;
     }
 }
@@ -103,6 +106,9 @@
 
 
 @media (max-width: 576px) {
+    .about__wrapper {
+        padding-top: 65px;
+    }
     .about__text {
         font-size: 15px;
     }
@@ -110,7 +116,7 @@
         font-size: 50px;
         line-height: 50px;
         left: -5px;
-        top: 40px;
+        top: 25px;
     }
     .about__photo {
         min-width: 300px;

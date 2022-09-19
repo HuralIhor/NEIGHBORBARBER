@@ -12,7 +12,7 @@
     // .service__item
     &__title {
         position: absolute;
-        top: 60px;
+        top: 45px;
         left: -45px;
         color: $main-color;
         font-size: 100px;
@@ -20,20 +20,20 @@
         opacity: .5;
         text-shadow: 3px 6px black;
     }
+   
     &__item {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        margin-bottom: 155px;
+        margin-bottom: 105px;
     }
+   
 
     // .service__photo
 
     &__photo {
-        min-height: 400px;
         min-width: 470px;
         z-index: 1;
-        overflow: hidden;
         img{
             width: 100%;
             box-shadow: 2px 2px 25px black;
@@ -56,6 +56,7 @@
         justify-content: space-between;
     }
 }
+
 
 .provide {
     color: rgb(192, 185, 185);
@@ -116,13 +117,12 @@
     }
     .service__title {
         left: -25px;
-        top: 7px;
+        top: 3px;
         font-size: 70px;
         line-height: 70px;
     }
     
 }
-
 
 @media (max-width: 576px) {
     .service__photo {
