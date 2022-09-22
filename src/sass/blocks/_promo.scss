@@ -39,7 +39,7 @@
 @media (max-width: 768px) {
     
     .promo {
-        background: url('../img/main_bg.jpg') no-repeat 50%/cover;
+        background: url('../img/main_bg_s.jpg') no-repeat 50%/cover;
         .title {
             &_fz48 {
             font-size: 40px;
@@ -53,10 +53,10 @@
 
 @media (max-width: 576px) {
     .promo {
-        background: url('../img/main_bg.jpg') no-repeat 63%/cover;
+        background: url('../img/main_bg_s.jpg') no-repeat 63%/cover;
         .title {
             &_fz48 {
-            font-size: 25px;
+            font-size: 20px;
         }
     }
 }
