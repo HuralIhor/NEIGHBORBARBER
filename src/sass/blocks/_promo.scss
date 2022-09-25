@@ -1,5 +1,6 @@
 .promo {
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 500px;
     background: url('../img/main_bg.jpg') no-repeat 50%/cover;
     padding-top: 205px;
     
@@ -32,10 +33,6 @@
     }
 }
 
-@media (max-width: 992px) {
-
-}
-
 @media (max-width: 768px) {
     
     .promo {
@@ -56,7 +53,8 @@
         background: url('../img/main_bg_s.jpg') no-repeat 63%/cover;
         .title {
             &_fz48 {
-            font-size: 20px;
+            font-size: 30px;
+            text-shadow: 1px 1px black;
         }
     }
 }
